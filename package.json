@@ -9,14 +9,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "git+https://github.com/morroIII/site2"
 	},
 	"author": "",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/tgulegacy/project-practicum-2022-1/issues"
-	},
-	"homepage": "https://github.com/tgulegacy/project-practicum-2022-1#readme",
+
 	"devDependencies": {
 		"clean-webpack-plugin": "^4.0.0",
 		"copy-webpack-plugin": "^10.2.4",
