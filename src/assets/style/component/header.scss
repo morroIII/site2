@@ -1,1 +1,128 @@
-.header{}
+.header{
+
+
+  &__middle{
+    display: none;
+  }
+  &__top{
+    background: #202020;
+    height: 40px;
+    gap:20px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:0 12px;
+  }
+  &__bottom{
+    display:flex;
+    margin-top:8px;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  &__search-mobile {
+    width: 16px;
+    height: 16px;
+
+  }
+
+  &__burger{
+    width:24px;
+    height:8px;
+    display:flex;
+  }
+  &__links{
+    display: flex;
+    gap:12px;
+  }
+  &__link{
+    width: 36px;
+    height: 36px;
+    background: #202020;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    img{
+      width: 16px;
+      height: 16px;
+
+    }
+  }
+}
+@media screen and( min-width: 1024px){
+
+  .header{
+    &__top{
+      padding:0 16px;
+    }
+    &__bottom{
+        margin-top:32px;
+      }
+    &__links{
+      gap:24px;
+    }
+  }
+}
+@media screen and( min-width: 1920px)
+{
+  .header {
+    &__left{
+      display: flex;
+      gap:56px;
+    }
+    &__burger {
+      display: none;
+    }
+    &__search-mobile{
+      display: none;
+    }
+    &__tel{
+      display: flex;
+      flex-direction: column;
+      gap:8px;
+    }
+    &__tel-number{
+      color:#202020;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &__tel-info{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #636363;
+
+    }
+    &__middle{
+      display: flex;
+      gap:32px;
+    }
+    &__search{
+      width: 757px;
+      height: 48px;
+      position: relative;
+      input{
+        width: calc(100% - 64px);
+
+        padding:16px 48px 16px 16px;
+        border:none;
+        outline: 1px solid #202020;
+      }
+    }
+    &__search-icon{
+      position: absolute;
+      right:16px;
+      top:16px;
+      width: 16px;
+      height: 16px;
+
+    }
+    &__left{
+
+    }
+  }
+}

@@ -14,8 +14,7 @@ module.exports = {
     mode,
     entry: {
         index: path.join(__dirname, 'src', 'index.js'),
-        search: path.join(__dirname, 'src', 'search.js'),
-        basket: path.join(__dirname, 'src', 'basket.js')
+
     },
     output: {
         path: isDev ? path.resolve(__dirname, 'dist') : path.resolve(__dirname, 'build'),
@@ -76,22 +75,9 @@ module.exports = {
             filename: "index.html",
             chunks: ['index']
         }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src', 'basket.html'),
-            filename: "basket.html",
-            chunks: ['basket']
-        }),
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'src', 'search.html'),
-            filename: "search.html",
-            chunks: ['search']
-        }),
+
         new CleanWebpackPlugin(),
-        new CopyPlugin({
-            patterns: [
-                { from: "public", to: "/" },
-            ],
-        }),
+
     ],
     resolve: {
         alias: {
