@@ -13,7 +13,10 @@
 	},
 	"author": "",
 	"license": "ISC",
-
+	"bugs": {
+		"url": "https://github.com/morroIII/site2/issues"
+	},
+	"homepage": "https://github.com/morroIII/site2#readme",
 	"devDependencies": {
 		"clean-webpack-plugin": "^4.0.0",
 		"copy-webpack-plugin": "^10.2.4",
