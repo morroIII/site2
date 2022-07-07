@@ -10,4 +10,14 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+:root {
+  --primary-color: #202020
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }

@@ -13,7 +13,7 @@
     align-items:center;
     padding:0 12px;
   }
-  &__bottom{
+  &__inner{
     display:flex;
     margin-top:8px;
     justify-content: space-between;
@@ -23,6 +23,7 @@
   &__search-mobile {
     width: 16px;
     height: 16px;
+    cursor: pointer;
 
   }
 
@@ -30,6 +31,7 @@
     width:24px;
     height:8px;
     display:flex;
+    cursor: pointer;
   }
   &__links{
     display: flex;
@@ -56,7 +58,7 @@
     &__top{
       padding:0 16px;
     }
-    &__bottom{
+    &__inner{
         margin-top:32px;
       }
     &__links{
